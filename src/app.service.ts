@@ -8,8 +8,6 @@ export class AppService {
   private readonly logger = new Logger(AppService.name);
 
   getHello(): string {
-    console.log('Inside controller service ');
-    
     const userId = this.requestservices.getUserId();    
     this.logger.log('Get userId from request servieces', userId);
     return 'Hello World!';
